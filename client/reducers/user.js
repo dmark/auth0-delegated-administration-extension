@@ -46,7 +46,7 @@ const userLogs = createReducer(fromJS(initialState.logs), {
           log.type = logTypes[log.type];
           if (!log.type) {
             log.type = {
-              event: 'Unknown Error',
+              event: 'Unknown Log Type',
               icon: {
                 name: '354',
                 color: '#FFA500'
